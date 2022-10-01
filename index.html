@@ -4,18 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Tiramisu</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+    <style>
+
+
+   li{
+
+     background-color: aqua;
+   }
+
+   table tr  td{
+    border: 3px solid;
+    border-color: rgb(196, 172, 52);
+    border-top-style: dotted;
+    font-family: "Sofia", sans-serif;
+    
+   }
+
+   th{
+    border: 3px solid;
+    border-color: rgb(196, 172, 52);
+    border-top-style: dotted;
+    height: 70px;
+    text-align: left;
+   
+
+   }
+
+   th a{
+  background-color: #ad900b;
+  color: rgb(28, 20, 20);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   }
+
+   #linku{
+
+    text-align: right;
+   }
+
+   td a{
+
+    background-color: #ad900b;
+  color: rgb(28, 20, 20);
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+   }
+   
+
+   /*nese  dua qe tabela te ze krejt siperfaqen e view portit perdorim
+   table{
+    width:100%;
+   }
+   
+   */
+
+   ul {
+  background: #ebcc41;
+  padding: 20px;
+  list-style-position: inside;
+}
+
+ul li {
+  background: #eee196;
+  color: rgb(21, 21, 23);
+  margin: 5px;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ad900b;
+    text-transform: uppercase;
+    
+}
+ 
+ p{
+    font-family: "Sofia", sans-serif;
+    text-align: justify;
+ }
+
+
+ fieldset {
+  background-color: #eee196;
+  width: 600px;
+  
+}
+legend {
+  background-color: #ad900b;
+  color: white;
+  padding: 5px 5px;
+  font-size: 20px;
+}
+
+input,label {
+    font-size: 20px;
+    margin:5px;
+}
+input[type=submit] {
+        background-color: #ad900b;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+input[type=reset] {
+        background-color: #ad900b;
+        border: none;
+        color: #fff;
+        padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+    </style>
 </head>
 <body>
 
     <table width="1000" align="center"  >
 <tr>
-    <td><h1>Tiramisu</h1></td>
-    <td></td>
-    <td><a href=""  >By on Amazon</a></td>
+    <th colspan="2"><h1>Tiramisu</h1></th>
+    
+    <th id="linku"><a href="" title="Shiko menyne" >Shiko menyne</a></th>
 </tr>
 <tr>
-    <td><p>Posted on <i>June 13, 2019</i>/posted in<a href="">No-Bake Recipes</a></p></td>
+    <td colspan="3"><p>Posted on <i>June 13, 2019</i>/posted in<a href="">Receta e gatimit</a></p></td>
 </tr><br/>
 <tr>
 <td><img width="350" src="./s1.jpg"></td>
@@ -41,7 +165,8 @@
     <li>1/2 teaspoon pure vanilla extract</li>
     <li>1/8 teaspoon salt</li>
     <li>unsweetened natural or dutch-process cocoa powder</li>
-</ul><br/>
+</ul>
+<br/>
 <p>For those not familiar, Maida Heatter is an icon, especially in the baking world. Dubbed the Queen of Cake, her expansive culinary career included 9 cookbooks, recipes for the Times, a restaurant, and three James Beard Awards. Baker and author Dorie Greenspan once said “Whenever someone tells me they want to learn to bake, I tell them to start with Maida Heatter’s books. That’s what I did.” This latest cookbook is a testament to Maida’s legacy. She passed away only 2 months after this book was published. She leaves behind an incalculable amount of inspiration to bakers and cooks all over the world.</p><br>
 
 </td>
@@ -74,7 +199,31 @@
     </dl>
 </td>
 
+<tr>
 
+    <td colspan="3">
+
+        <form>
+<fieldset>
+    
+    <legend>Prano porosi:</legend>
+   
+    <label for="klient">Klienti:</label>      
+    <input type="text" id="klient "name="klienti" placeholder="Emri i klientit"> <br/>
+    <label for="adresa">Adresa:</label>
+    <input type="text" id="adresa" name="adresa" placeholder="Adresa e klientit"><br/>
+    <label for="Tel">Telefon:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required> <br/>
+    <label for="Tel">Sasia:</label>
+    <input type="number"  name="sasia"  id="sasia"  placeholder="sasia" min="1" max="10"> <br/>
+    <input type="submit" value="Prano"><br/>
+    <input type="reset"  value="Porosi e re" >
+</fieldset>
+
+        </form>
+
+    </td>
+</tr>
 
 
 </tr>
